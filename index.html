@@ -1,0 +1,1399 @@
+
+<html lang="es"><head>
+<style data-omelette-injected="">html,body{background:transparent}</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curso RCP y Primeros Auxilios | 16 certificaciones internacionales — Barbara Magallanes</title>
+<meta name="description" content="16 certificaciones internacionales en RCP, DEA y Primeros Auxilios. Para empresas y comunidad. Aprendé a salvar vidas con aval AHA / ILCOR.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;family=Sora:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#FBF6EE;            /* crema arena */
+    --bg-2:#F2EAD9;          /* arena cálida */
+    --bg-3:#E9DFC8;
+    --paper:#FFFCF6;
+    --ink:#1F2A2E;           /* teal-charcoal en lugar de negro */
+    --ink-2:#2C3A3F;
+    --ink-3:#445057;
+    --line:#3A4A50;
+    --terracotta:#C0392B;    /* rojo cálido */
+    --terra-deep:#8B2C20;
+    --ochre:#D9943A;         /* mostaza/ocre */
+    --olive:#5A6E3F;
+    --teal:#1F6B6B;
+    --rose:#F4D5C9;
+    --mute:#7C8488;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Sora",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;font-size:17px;font-weight:400}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  button{font-family:inherit;cursor:pointer;border:0;background:none}
+  ::selection{background:var(--terracotta);color:#fff}
+
+  .display{font-family:"Bricolage Grotesque","Helvetica Neue",sans-serif;font-weight:700;letter-spacing:-.035em;line-height:.95;font-variation-settings:"opsz" 96}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+  .container{max-width:1320px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--terracotta);font-weight:500;display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";display:inline-block;width:24px;height:1px;background:currentColor}
+  .eyebrow.light{color:var(--ochre)}
+  .eyebrow.dark{color:var(--ink)}
+
+  /* ============ TOP ALERT ============ */
+  .alertbar{background:var(--terracotta);color:#fff;overflow:hidden;border-bottom:1px solid var(--terra-deep)}
+  .alertbar-track{display:flex;gap:48px;white-space:nowrap;animation:scroll 55s linear infinite;padding:11px 0;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+  .alertbar-track span{display:inline-flex;align-items:center;gap:14px}
+  .alertbar-track i{display:inline-block;width:5px;height:5px;background:#FFD23F;border-radius:50%;animation:blink 1.2s infinite}
+  .alertbar-track b{color:#FFD23F;font-weight:600}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.5)}}
+
+  /* ============ NAV ============ */
+  nav.top{position:sticky;top:0;background:rgba(251,246,238,.92);backdrop-filter:blur(14px);z-index:50;border-bottom:1px solid rgba(31,42,46,.08)}
+  nav.top .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .logo .mark{width:44px;height:44px;background:var(--terracotta);display:grid;place-items:center;position:relative;color:#fff;border-radius:50%}
+  .logo .mark::before,.logo .mark::after{content:"";position:absolute;background:#fff}
+  .logo .mark::before{width:18px;height:4px;border-radius:2px}
+  .logo .mark::after{width:4px;height:18px;border-radius:2px}
+  .logo .name{font-family:"Bricolage Grotesque",sans-serif;font-size:16px;line-height:1;font-weight:700;letter-spacing:-.02em}
+  .logo .name small{display:block;font-weight:400;color:var(--mute);font-size:11px;letter-spacing:.04em;margin-top:4px;font-family:"JetBrains Mono",monospace;text-transform:uppercase}
+  nav.top ul{display:flex;gap:32px;list-style:none;font-size:14px;font-weight:500}
+  nav.top ul a{text-decoration:none;color:var(--ink);transition:color .2s}
+  nav.top ul a:hover{color:var(--terracotta)}
+  nav.top .cta{background:var(--ink);color:#fff;padding:13px 22px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:background .2s,transform .15s;border-radius:999px}
+  nav.top .cta:hover{background:var(--terracotta);transform:translateY(-1px)}
+  @media(max-width:880px){nav.top ul{display:none}}
+
+  /* ============ HERO ============ */
+  .hero{position:relative;padding:90px 0 120px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-100px;right:-150px;width:520px;height:520px;background:var(--ochre);border-radius:50%;opacity:.18;filter:blur(60px);z-index:0}
+  .hero::after{content:"";position:absolute;bottom:-200px;left:-200px;width:600px;height:600px;background:var(--terracotta);border-radius:50%;opacity:.1;filter:blur(80px);z-index:0}
+  .hero .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+  @media(max-width:980px){.hero .grid{grid-template-columns:1fr;gap:60px}}
+  .hero-tag{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;background:var(--paper);border:1px solid rgba(31,42,46,.1);font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:32px;border-radius:999px}
+  .hero-tag .dot{width:8px;height:8px;background:var(--olive);border-radius:50%;animation:blink 1.2s infinite}
+  .hero h1{font-size:clamp(46px,7.4vw,108px);line-height:.96;letter-spacing:-.04em}
+  .hero h1 .terra{color:var(--terracotta);font-style:italic;font-family:"Bricolage Grotesque",sans-serif;font-weight:600}
+  .hero h1 .underline{position:relative;display:inline-block}
+  .hero h1 .underline::after{content:"";position:absolute;left:-4%;right:-4%;bottom:6px;height:18px;background:var(--ochre);opacity:.5;z-index:-1;transform:rotate(-1deg);border-radius:4px}
+  .hero h1 .strike{position:relative;display:inline-block;color:var(--mute);font-weight:500}
+  .hero h1 .strike::before{content:"";position:absolute;left:-3%;right:-3%;top:48%;height:6px;background:var(--terracotta);transform:rotate(-2.5deg);border-radius:3px}
+  .hero .lead{margin-top:38px;font-size:21px;color:var(--ink-2);max-width:600px;line-height:1.55;font-weight:400}
+  .hero .lead strong{font-weight:600;background:var(--ochre);padding:1px 6px;border-radius:3px;color:var(--ink)}
+  .hero .cta-row{display:flex;gap:14px;margin-top:42px;flex-wrap:wrap;align-items:center}
+
+  .btn{display:inline-flex;align-items:center;gap:12px;padding:18px 30px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s,background .15s,box-shadow .15s,color .15s;border:0;font-family:inherit;border-radius:999px;cursor:pointer;letter-spacing:-.005em}
+  .btn-primary{background:var(--terracotta);color:#fff}
+  .btn-primary:hover{background:var(--terra-deep);transform:translateY(-2px);box-shadow:0 14px 30px rgba(192,57,43,.35)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:var(--ink-2);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .btn-ochre{background:var(--ochre);color:var(--ink)}
+  .btn-ochre:hover{background:#C5832A;color:#fff}
+  .btn .arrow{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:rgba(255,255,255,.18);border-radius:50%;transition:transform .15s}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .btn .arrow::after{content:"→";font-family:inherit;font-size:13px;font-weight:700}
+
+  .hero-meta{margin-top:50px;display:grid;grid-template-columns:repeat(2,auto);gap:16px 38px;justify-content:start;color:var(--ink-2);font-size:14px;font-weight:500}
+  .hero-meta div{display:flex;align-items:center;gap:10px}
+  .hero-meta .check{width:22px;height:22px;background:var(--olive);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0}
+
+  /* hero card — ECG */
+  .hero-card{position:relative;display:flex;flex-direction:column;gap:20px}
+  .vital-card{background:var(--paper);border-radius:28px;padding:32px;position:relative;border:1px solid rgba(31,42,46,.08);box-shadow:0 30px 60px -20px rgba(31,42,46,.18)}
+  .vital-card .tag{position:absolute;top:-14px;left:24px;background:var(--ink);color:#fff;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:7px 14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;border-radius:999px}
+  .vital-card .tag::before{content:"";width:6px;height:6px;background:var(--terracotta);border-radius:50%;animation:blink 1s infinite}
+  .vital-card h3{font-size:11px;color:var(--mute);font-weight:600;margin-bottom:18px;letter-spacing:.14em;text-transform:uppercase;font-family:"JetBrains Mono",monospace}
+  .ekg{height:100px;background:var(--ink);position:relative;overflow:hidden;border-radius:14px;margin-bottom:24px}
+  .ekg::after{content:"";position:absolute;inset:0;background:
+    repeating-linear-gradient(0deg,transparent 0 14px,rgba(255,255,255,.03) 14px 15px),
+    repeating-linear-gradient(90deg,transparent 0 14px,rgba(255,255,255,.03) 14px 15px);
+    pointer-events:none}
+  .ekg svg{position:absolute;inset:0;width:200%;height:100%;animation:ekg 3s linear infinite}
+  @keyframes ekg{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .vital-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:14px;overflow:hidden;border:1px solid rgba(31,42,46,.08)}
+  .vital{padding:18px 20px;background:var(--bg)}
+  .vital + .vital{border-left:1px solid rgba(31,42,46,.08)}
+  .vital:nth-child(3),.vital:nth-child(4){border-top:1px solid rgba(31,42,46,.08)}
+  .vital .num{font-family:"Bricolage Grotesque",sans-serif;font-size:30px;color:var(--ink);line-height:1;letter-spacing:-.03em;font-weight:700}
+  .vital .num em{font-style:normal;color:var(--terracotta)}
+  .vital .lab{font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;margin-top:6px;font-family:"JetBrains Mono",monospace;font-weight:500}
+
+  .floating-card{align-self:flex-end;background:var(--ochre);color:var(--ink);padding:20px 24px;font-family:"Bricolage Grotesque",sans-serif;font-size:22px;line-height:1.05;letter-spacing:-.02em;transform:rotate(2deg);box-shadow:0 18px 40px -10px rgba(217,148,58,.55);border-radius:18px;font-weight:700;max-width:280px}
+  .floating-card small{display:block;font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:600;margin-bottom:6px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* ============ TRUST ============ */
+  .trust{background:var(--ink);color:#fff;padding:30px 0}
+  .trust .row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .trust .label{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ochre);font-weight:500}
+  .trust .marks{display:flex;gap:50px;flex-wrap:wrap;align-items:center}
+  .trust .mark-item{font-family:"Bricolage Grotesque",sans-serif;color:#fff;font-size:18px;letter-spacing:.04em;opacity:.65;transition:opacity .2s;font-weight:700}
+  .trust .mark-item:hover{opacity:1}
+
+  /* ============ SHOCK STATS ============ */
+  .shock{background:var(--bg-2);padding:140px 0;position:relative;overflow:hidden}
+  .shock-head{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;margin-bottom:70px;align-items:end}
+  @media(max-width:880px){.shock-head{grid-template-columns:1fr;gap:30px}}
+  .shock h2{font-size:clamp(48px,7vw,98px);line-height:.94;letter-spacing:-.04em}
+  .shock h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .shock-head .right p{font-size:18px;color:var(--ink-2);line-height:1.6;max-width:480px}
+  .shock-head .right p strong{font-weight:600;background:var(--ink);color:var(--ochre);padding:1px 8px;border-radius:4px}
+  .shock-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media(max-width:880px){.shock-grid{grid-template-columns:repeat(2,1fr)}}
+  .stat{padding:36px 28px;background:var(--paper);position:relative;transition:transform .25s;border-radius:24px;border:1px solid rgba(31,42,46,.08)}
+  .stat:nth-child(1){border-radius:80px 24px 24px 24px}
+  .stat:nth-child(2){background:var(--ink);color:#fff;border-color:var(--ink)}
+  .stat:nth-child(2) .lab{color:#fff}
+  .stat:nth-child(2) .src{color:var(--ochre);border-top-color:var(--line)}
+  .stat:nth-child(3){border-radius:24px 80px 24px 24px}
+  .stat:nth-child(4){background:var(--terracotta);color:#fff;border-color:var(--terracotta)}
+  .stat:nth-child(4) .num{color:#fff}
+  .stat:nth-child(4) .num em{color:var(--ochre)}
+  .stat:nth-child(4) .lab{color:#fff}
+  .stat:nth-child(4) .src{color:#FECACA;border-top-color:rgba(255,255,255,.18)}
+  .stat:hover{transform:translateY(-6px)}
+  .stat .num{font-family:"Bricolage Grotesque",sans-serif;font-size:78px;color:var(--ink);line-height:.9;letter-spacing:-.05em;font-weight:700}
+  .stat .num em{font-style:normal;color:var(--terracotta)}
+  .stat:nth-child(2) .num em{color:var(--ochre)}
+  .stat .lab{margin-top:14px;font-size:15px;font-weight:500;color:var(--ink);line-height:1.45}
+  .stat .src{margin-top:14px;padding-top:14px;border-top:1px solid rgba(31,42,46,.1);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+
+  /* ============ AGITATION ============ */
+  .agit{background:var(--ink);color:#fff;padding:140px 0;position:relative;overflow:hidden}
+  .agit::before{content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(192,57,43,.22),transparent 65%)}
+  .agit::after{content:"";position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(217,148,58,.14),transparent 65%)}
+  .agit-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;position:relative;z-index:1}
+  @media(max-width:880px){.agit-grid{grid-template-columns:1fr;gap:60px}}
+  .agit h2{font-size:clamp(44px,6vw,82px);line-height:.95;letter-spacing:-.04em}
+  .agit h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .agit-list{list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:36px}
+  .agit-list li{padding:20px 24px 20px 60px;position:relative;font-size:16px;color:#C4C8D2;line-height:1.55;background:rgba(255,255,255,.03);border-radius:16px;border:1px solid rgba(255,255,255,.06)}
+  .agit-list li::before{content:"";position:absolute;left:18px;top:24px;width:24px;height:24px;background:var(--terracotta);border-radius:50%;background-image:linear-gradient(45deg,transparent 45%,#fff 45%,#fff 55%,transparent 55%),linear-gradient(-45deg,transparent 45%,#fff 45%,#fff 55%,transparent 55%);background-size:14px 14px;background-position:center;background-repeat:no-repeat}
+  .agit-list strong{color:#fff;font-weight:600;display:block;margin-bottom:4px;font-size:17px}
+  .agit-quote{margin-top:36px;padding:36px;background:linear-gradient(135deg,rgba(192,57,43,.18),rgba(217,148,58,.1));font-size:21px;font-weight:400;line-height:1.5;font-style:italic;border-radius:24px;border:1px solid rgba(192,57,43,.3);position:relative}
+  .agit-quote::before{content:"\201C";display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:90px;color:var(--terracotta);line-height:.5;margin-bottom:8px;font-style:normal;font-weight:700}
+  .agit-quote cite{display:block;margin-top:18px;font-size:12px;color:var(--ochre);font-style:normal;font-weight:500;font-family:"JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+
+  /* ============ NEW: TRANSFORMATION (Antes / Después) ============ */
+  .transform{background:var(--bg);padding:140px 0;position:relative;overflow:hidden}
+  .transform .head{text-align:center;max-width:780px;margin:0 auto 80px}
+  .transform h2{font-size:clamp(44px,6vw,84px);line-height:.95;letter-spacing:-.04em;margin-top:14px}
+  .transform h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .transform .sub{margin-top:22px;font-size:18px;color:var(--ink-2);line-height:1.55}
+  .transform-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:30px;align-items:stretch}
+  @media(max-width:880px){.transform-grid{grid-template-columns:1fr;gap:20px}}
+  .tr-card{padding:44px;border-radius:32px;display:flex;flex-direction:column}
+  .tr-before{background:var(--ink);color:#fff}
+  .tr-before .label{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;background:rgba(255,255,255,.08);border-radius:999px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:24px;color:#A3A3A3;align-self:flex-start}
+  .tr-before .label::before{content:"";width:8px;height:8px;background:var(--mute);border-radius:50%}
+  .tr-before h3{font-family:"Bricolage Grotesque",sans-serif;font-size:36px;line-height:1;letter-spacing:-.03em;margin-bottom:20px;font-weight:700}
+  .tr-before ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .tr-before li{padding-left:32px;position:relative;color:#C4C8D2;font-size:15px;line-height:1.5}
+  .tr-before li::before{content:"✕";position:absolute;left:0;top:-2px;color:var(--terracotta);font-weight:900;font-size:18px}
+  .tr-arrow{display:grid;place-items:center;color:var(--terracotta);font-size:48px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700}
+  @media(max-width:880px){.tr-arrow{transform:rotate(90deg);padding:10px 0}}
+  .tr-after{background:var(--olive);color:#fff;position:relative;overflow:hidden}
+  .tr-after::before{content:"";position:absolute;top:-80px;right:-80px;width:240px;height:240px;background:rgba(255,255,255,.1);border-radius:50%}
+  .tr-after .label{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;background:rgba(255,255,255,.18);border-radius:999px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-bottom:24px;align-self:flex-start;color:#fff;position:relative;z-index:1}
+  .tr-after .label::before{content:"";width:8px;height:8px;background:var(--ochre);border-radius:50%}
+  .tr-after h3{font-family:"Bricolage Grotesque",sans-serif;font-size:36px;line-height:1;letter-spacing:-.03em;margin-bottom:20px;font-weight:700;position:relative;z-index:1}
+  .tr-after ul{list-style:none;display:flex;flex-direction:column;gap:14px;position:relative;z-index:1}
+  .tr-after li{padding-left:32px;position:relative;color:#F0EDE5;font-size:15px;line-height:1.5}
+  .tr-after li::before{content:"✓";position:absolute;left:0;top:-1px;color:var(--ochre);font-weight:900;font-size:18px}
+
+  /* ============ SOLUTION + CERT MENU ============ */
+  .menu{background:var(--bg-2);padding:140px 0 100px;position:relative}
+  .menu-intro{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:end;margin-bottom:70px}
+  @media(max-width:880px){.menu-intro{grid-template-columns:1fr;gap:30px}}
+  .menu-intro h2{font-size:clamp(48px,6.5vw,96px);line-height:.95;letter-spacing:-.04em}
+  .menu-intro h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .menu-intro .right p{font-size:17px;color:var(--ink-2);line-height:1.6}
+  .menu-intro .right p strong{font-weight:600;color:var(--ink)}
+
+  .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;padding:18px;background:var(--paper);border-radius:999px;align-items:center;justify-content:flex-start}
+  @media(max-width:560px){.filter-bar{border-radius:24px}}
+  .filter-bar .filter-label{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:500;padding:0 12px}
+  .filter-bar button{padding:10px 18px;border-radius:999px;font-family:"Sora",sans-serif;font-size:13px;font-weight:600;background:transparent;color:var(--ink-2);transition:all .2s;border:1px solid transparent}
+  .filter-bar button:hover{background:var(--bg-2)}
+  .filter-bar button.active{background:var(--ink);color:#fff}
+
+  .cert-list{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+  @media(max-width:980px){.cert-list{grid-template-columns:repeat(6,1fr)}}
+  @media(max-width:560px){.cert-list{grid-template-columns:1fr}}
+  .cert{padding:32px;background:var(--paper);position:relative;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:transform .25s,box-shadow .25s;text-decoration:none;color:inherit;border-radius:28px;border:1px solid rgba(31,42,46,.06);overflow:hidden;min-height:280px;grid-column:span 4}
+  @media(max-width:980px){.cert{grid-column:span 3}}
+  @media(max-width:560px){.cert{grid-column:span 1}}
+  .cert:hover{transform:translateY(-6px);box-shadow:0 30px 60px -20px rgba(31,42,46,.25)}
+  .cert.wide{grid-column:span 6}
+  @media(max-width:980px){.cert.wide{grid-column:span 6}}
+  @media(max-width:560px){.cert.wide{grid-column:span 1}}
+  .cert .topline{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px}
+  .cert .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;background:var(--bg-2);color:var(--ink-2)}
+  .cert .badge.terra{background:var(--terracotta);color:#fff}
+  .cert .badge.ochre{background:var(--ochre);color:var(--ink)}
+  .cert .badge.olive{background:var(--olive);color:#fff}
+  .cert .hours{display:flex;align-items:baseline;gap:6px;font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.04em;font-weight:700}
+  .cert .hours .n{font-size:48px;line-height:.85;color:var(--terracotta)}
+  .cert .hours .u{font-size:13px;color:var(--mute);font-family:"JetBrains Mono",monospace;font-weight:500;letter-spacing:.04em}
+  .cert h4{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:10px}
+  .cert p.desc{font-size:14px;color:var(--ink-3);line-height:1.5;margin-bottom:18px}
+  .cert .modules{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+  .cert .mod{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;padding:4px 10px;background:var(--bg-2);color:var(--ink-2);text-transform:uppercase;font-weight:500;border-radius:999px}
+  .cert .pricerow{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:18px;border-top:1px dashed rgba(31,42,46,.15)}
+  .cert .pricerow .price{display:flex;flex-direction:column;gap:2px}
+  .cert .pricerow .amt{font-family:"Bricolage Grotesque",sans-serif;font-size:26px;color:var(--ink);line-height:1;letter-spacing:-.03em;font-weight:700}
+  .cert .pricerow .strike{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--mute);text-decoration:line-through}
+  .cert .buy{padding:11px 18px;background:var(--ink);color:#fff;border-radius:999px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:background .2s}
+  .cert:hover .buy{background:var(--terracotta)}
+  .cert .buy::after{content:"→";font-size:14px}
+  .cert.spotlight{background:linear-gradient(140deg,var(--terracotta) 0%,var(--terra-deep) 100%);color:#fff}
+  .cert.spotlight .badge{background:rgba(255,255,255,.18);color:#fff}
+  .cert.spotlight .hours .n{color:var(--ochre)}
+  .cert.spotlight .hours .u{color:#FECACA}
+  .cert.spotlight .mod{background:rgba(255,255,255,.18);color:#fff}
+  .cert.spotlight p.desc{color:#FECACA}
+  .cert.spotlight .pricerow{border-top-color:rgba(255,255,255,.25)}
+  .cert.spotlight .pricerow .strike{color:#FECACA}
+  .cert.spotlight .buy{background:#fff;color:var(--ink)}
+  .cert.spotlight:hover .buy{background:var(--ochre);color:var(--ink)}
+
+  .cert.brigadista{background:var(--ink);color:#fff;grid-column:span 12;min-height:auto;padding:48px;display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;border-radius:32px}
+  @media(max-width:980px){.cert.brigadista{grid-column:span 6;grid-template-columns:1fr;gap:24px}}
+  @media(max-width:560px){.cert.brigadista{grid-column:span 1}}
+  .cert.brigadista .icon-wrap{width:120px;height:120px;background:var(--terracotta);border-radius:50%;display:grid;place-items:center;font-size:54px;flex-shrink:0;position:relative}
+  .cert.brigadista .icon-wrap::before{content:"";position:absolute;inset:-10px;border:2px solid rgba(192,57,43,.4);border-radius:50%}
+  .cert.brigadista h4{font-size:38px;margin-bottom:8px;letter-spacing:-.03em}
+  .cert.brigadista .badge{background:var(--ochre);color:var(--ink)}
+  .cert.brigadista p.desc{color:#C4C8D2;font-size:16px;margin-bottom:18px;max-width:560px}
+  .cert.brigadista .mod{background:rgba(255,255,255,.12);color:#fff}
+  .cert.brigadista .modules{margin-bottom:0}
+  .cert.brigadista .cta-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+  .cert.brigadista .price-big{font-family:"Bricolage Grotesque",sans-serif;font-size:42px;color:var(--ochre);line-height:1;letter-spacing:-.03em;font-weight:700}
+  .cert.brigadista .strike-big{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--mute);text-decoration:line-through}
+  @media(max-width:980px){.cert.brigadista .cta-side{align-items:flex-start}}
+
+  /* ============ HOW IT WORKS (NEW) ============ */
+  .how{background:var(--paper);padding:140px 0;position:relative}
+  .how .head{text-align:center;max-width:760px;margin:0 auto 80px}
+  .how h2{font-size:clamp(46px,6vw,88px);line-height:.95;letter-spacing:-.04em;margin-top:14px}
+  .how h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .how-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+  @media(max-width:880px){.how-steps{grid-template-columns:1fr 1fr;gap:30px}}
+  @media(max-width:560px){.how-steps{grid-template-columns:1fr}}
+  .how-steps::before{content:"";position:absolute;top:48px;left:10%;right:10%;height:2px;background:repeating-linear-gradient(to right,var(--ink) 0 6px,transparent 6px 12px);z-index:0}
+  @media(max-width:880px){.how-steps::before{display:none}}
+  .step{text-align:center;padding:0 16px;position:relative;z-index:1}
+  .step .num{width:96px;height:96px;background:var(--bg);border:2px solid var(--ink);color:var(--ink);font-family:"Bricolage Grotesque",sans-serif;font-size:42px;font-weight:700;border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;letter-spacing:-.04em;position:relative}
+  .step:nth-child(2) .num{background:var(--ochre);border-color:var(--ochre)}
+  .step:nth-child(3) .num{background:var(--terracotta);border-color:var(--terracotta);color:#fff}
+  .step:nth-child(4) .num{background:var(--olive);border-color:var(--olive);color:#fff}
+  .step h4{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;letter-spacing:-.02em;margin-bottom:10px;font-weight:700}
+  .step p{font-size:14px;color:var(--ink-3);line-height:1.55;max-width:240px;margin:0 auto}
+  .step .meta{margin-top:14px;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--terracotta);letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+
+  /* ============ NEW: WHAT'S INCLUDED / BONUSES ============ */
+  .bonus{background:var(--bg-3);padding:140px 0;position:relative;overflow:hidden}
+  .bonus::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:var(--terracotta);opacity:.06;border-radius:50%}
+  .bonus-head{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:end;margin-bottom:70px;position:relative;z-index:1}
+  @media(max-width:880px){.bonus-head{grid-template-columns:1fr;gap:30px}}
+  .bonus h2{font-size:clamp(44px,6vw,82px);line-height:.95;letter-spacing:-.04em;margin-top:14px}
+  .bonus h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .bonus .right{padding:24px;background:var(--paper);border-radius:18px;border:1px solid rgba(31,42,46,.08)}
+  .bonus .right p{font-size:15px;color:var(--ink-2);line-height:1.6}
+  .bonus .right p strong{color:var(--terracotta);font-weight:600}
+  .bonus-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;position:relative;z-index:1}
+  @media(max-width:980px){.bonus-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.bonus-grid{grid-template-columns:1fr}}
+  .bonus-card{padding:28px;background:var(--paper);border-radius:24px;border:1px solid rgba(31,42,46,.08);position:relative;display:flex;flex-direction:column;gap:14px;grid-column:span 2}
+  .bonus-card.large{grid-column:span 3}
+  @media(max-width:980px){.bonus-card,.bonus-card.large{grid-column:span 1}}
+  .bonus-card .gift{display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive);font-weight:600}
+  .bonus-card .gift::before{content:"★";font-size:14px}
+  .bonus-card h4{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;letter-spacing:-.02em;line-height:1.15;font-weight:700}
+  .bonus-card p{font-size:14px;color:var(--ink-3);line-height:1.55;flex-grow:1}
+  .bonus-card .value{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--terracotta);font-weight:600;letter-spacing:.06em;padding-top:14px;border-top:1px dashed rgba(31,42,46,.15);margin-top:auto}
+  .bonus-card.large{background:var(--ink);color:#fff;border-color:var(--ink);min-height:auto}
+  .bonus-card.large h4{font-size:28px}
+  .bonus-card.large p{color:#C4C8D2;font-size:15px}
+  .bonus-card.large .value{color:var(--ochre);border-top-color:rgba(255,255,255,.18)}
+  .bonus-card.large .gift{color:var(--ochre)}
+
+  /* ============ COMBO STACK (NEW) ============ */
+  .combo{background:var(--ink);color:#fff;padding:140px 0;position:relative;overflow:hidden}
+  .combo::before{content:"";position:absolute;top:-200px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(217,148,58,.18),transparent 65%)}
+  .combo .head{text-align:center;max-width:740px;margin:0 auto 60px;position:relative;z-index:1}
+  .combo h2{font-size:clamp(44px,6vw,86px);line-height:.95;letter-spacing:-.04em;margin-top:14px}
+  .combo h2 em{font-style:italic;color:var(--ochre);font-weight:600}
+  .combo .head p{font-size:18px;color:#C4C8D2;line-height:1.55;margin-top:22px}
+  .combos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:1}
+  @media(max-width:880px){.combos-grid{grid-template-columns:1fr}}
+  .combo-card{background:var(--ink-2);border:1px solid var(--line);padding:32px;border-radius:24px;position:relative;display:flex;flex-direction:column}
+  .combo-card .save{position:absolute;top:-14px;right:24px;background:var(--ochre);color:var(--ink);padding:8px 14px;border-radius:999px;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+  .combo-card .qty{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ochre);font-weight:600;margin-bottom:12px}
+  .combo-card h3{font-family:"Bricolage Grotesque",sans-serif;font-size:28px;letter-spacing:-.02em;line-height:1.05;margin-bottom:14px;font-weight:700}
+  .combo-card .items{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px;flex-grow:1}
+  .combo-card .items li{padding-left:24px;position:relative;font-size:13px;color:#C4C8D2;line-height:1.5}
+  .combo-card .items li::before{content:"+";position:absolute;left:0;top:-1px;color:var(--terracotta);font-weight:900;font-size:16px}
+  .combo-card .pricerow{display:flex;align-items:baseline;justify-content:space-between;padding:18px 0;border-top:1px dashed rgba(255,255,255,.18)}
+  .combo-card .price-block{display:flex;flex-direction:column;gap:2px}
+  .combo-card .price-block .strike{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--mute);text-decoration:line-through}
+  .combo-card .price-block .amt{font-family:"Bricolage Grotesque",sans-serif;font-size:36px;color:#fff;letter-spacing:-.03em;line-height:1;font-weight:700}
+  .combo-card .price-block .amt em{font-style:normal;color:var(--ochre);font-size:14px;margin-left:4px;font-family:"JetBrains Mono",monospace;font-weight:500}
+  .combo-card .savings{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--olive);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .combo-card .btn{width:100%;justify-content:center;padding:14px;font-size:14px}
+  .combo-card.featured{background:linear-gradient(140deg,var(--terracotta),var(--terra-deep));border-color:var(--terra-deep);transform:scale(1.04)}
+  @media(max-width:880px){.combo-card.featured{transform:none}}
+  .combo-card.featured .qty{color:var(--ochre)}
+  .combo-card.featured .items li{color:#FECACA}
+  .combo-card.featured .items li::before{color:var(--ochre)}
+  .combo-card.featured .pricerow{border-top-color:rgba(255,255,255,.3)}
+  .combo-card.featured .savings{color:var(--ochre)}
+  .combo-card.featured .btn{background:var(--ink);color:#fff}
+  .combo-card.featured .btn:hover{background:#000}
+
+  /* ============ AUDIENCES ============ */
+  .audience{background:var(--bg);padding:140px 0;position:relative}
+  .audience h2{text-align:center;font-size:clamp(44px,6vw,80px);line-height:.95;margin-bottom:18px;letter-spacing:-.04em}
+  .audience h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .audience .sub{text-align:center;color:var(--ink-2);font-size:18px;max-width:620px;margin:0 auto 70px;line-height:1.55}
+  .aud-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:880px){.aud-grid{grid-template-columns:1fr}}
+  .aud{background:var(--paper);padding:48px;position:relative;overflow:hidden;border-radius:32px;border:1px solid rgba(31,42,46,.08)}
+  .aud.b2b{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .aud.b2b ul li{color:#E5E7EB}
+  .aud.b2b > p{color:#C4C8D2}
+  .aud.b2b ul li::before{border-color:var(--ochre)}
+  .aud.b2b ul li strong{color:#fff}
+  .aud.b2b h3{color:#fff}
+  .aud.b2b h3 em{color:var(--ochre)}
+  .aud .corner{position:absolute;top:24px;right:24px;background:var(--terracotta);color:#fff;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;padding:6px 14px;text-transform:uppercase;font-weight:600;border-radius:999px}
+  .aud h3{font-family:"Bricolage Grotesque",sans-serif;font-size:44px;line-height:1;letter-spacing:-.03em;margin-bottom:18px;font-weight:700}
+  .aud h3 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .aud > p{color:var(--ink-2);margin-bottom:30px;font-size:16px;line-height:1.6}
+  .aud ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .aud li{padding-left:32px;position:relative;color:var(--ink-2);font-size:15px;line-height:1.5}
+  .aud li::before{content:"";position:absolute;left:0;top:6px;width:16px;height:9px;border-left:3px solid var(--terracotta);border-bottom:3px solid var(--terracotta);transform:rotate(-45deg)}
+  .aud li strong{color:var(--ink);font-weight:600}
+
+  /* ============ INSTRUCTOR ============ */
+  .instr{background:var(--bg-2);padding:140px 0}
+  .instr-grid{display:grid;grid-template-columns:.85fr 1.2fr;gap:80px;align-items:center}
+  @media(max-width:880px){.instr-grid{grid-template-columns:1fr;gap:50px}}
+  .instr-photo{aspect-ratio:4/5;background:
+    linear-gradient(45deg,var(--bg-3),var(--rose));
+    border-radius:32px 32px 32px 120px;position:relative;display:grid;place-items:center;overflow:hidden}
+  .instr-photo::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 24px,rgba(31,42,46,.04) 24px 25px)}
+  .instr-photo .ph{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink);letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:18px 22px;background:rgba(255,255,255,.85);border-radius:14px;font-weight:500;position:relative;z-index:1;line-height:1.6}
+  .instr-photo .stamp{position:absolute;bottom:24px;right:-26px;background:var(--terracotta);color:#fff;font-family:"Bricolage Grotesque",sans-serif;font-size:22px;padding:14px 20px;line-height:1;letter-spacing:-.02em;transform:rotate(-3deg);box-shadow:0 18px 30px -10px rgba(192,57,43,.45);font-weight:700;border-radius:14px}
+  .instr-photo .stamp small{display:block;font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:500;margin-bottom:4px;letter-spacing:.12em;text-transform:uppercase}
+  .instr h2{font-size:clamp(44px,5.5vw,72px);line-height:.95;margin:14px 0 24px;letter-spacing:-.04em}
+  .instr h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .instr p{font-size:18px;color:var(--ink-2);line-height:1.65;margin-bottom:18px}
+  .creds{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:32px}
+  .cred{padding:24px;background:var(--paper);border-radius:18px;border:1px solid rgba(31,42,46,.08)}
+  .cred .n{font-family:"Bricolage Grotesque",sans-serif;font-size:46px;color:var(--terracotta);line-height:.9;letter-spacing:-.04em;font-weight:700}
+  .cred .l{font-size:13px;color:var(--ink);font-weight:500;margin-top:6px;font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+
+  /* ============ TESTIMONIALS ============ */
+  .testi{background:var(--bg);padding:140px 0}
+  .testi h2{font-size:clamp(44px,5.5vw,80px);line-height:.95;margin-bottom:14px;letter-spacing:-.04em;margin-top:14px}
+  .testi h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .testi .sub{color:var(--ink-2);font-size:18px;max-width:580px;margin-bottom:60px;line-height:1.55}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:880px){.testi-grid{grid-template-columns:1fr}}
+  .quote{background:var(--paper);padding:32px;position:relative;display:flex;flex-direction:column;border-radius:24px;border:1px solid rgba(31,42,46,.08)}
+  .quote:nth-child(2){background:var(--ochre);color:var(--ink)}
+  .quote:nth-child(2) p{color:var(--ink)}
+  .quote:nth-child(2) .who{border-top-color:rgba(31,42,46,.15)}
+  .quote:nth-child(5){background:var(--olive);color:#fff;border-color:var(--olive)}
+  .quote:nth-child(5) p{color:#fff}
+  .quote:nth-child(5) p strong{background:var(--ochre);color:var(--ink)}
+  .quote:nth-child(5) .who{border-top-color:rgba(255,255,255,.2)}
+  .quote:nth-child(5) .av{background:var(--ink);color:#fff}
+  .quote:nth-child(5) .who .r{color:#FFEEDD}
+  .quote .stars{color:var(--terracotta);font-size:18px;letter-spacing:2px;margin-bottom:16px}
+  .quote:nth-child(2) .stars,.quote:nth-child(5) .stars{color:var(--ink)}
+  .quote:nth-child(5) .stars{color:var(--ochre)}
+  .quote p{font-size:16px;color:var(--ink);line-height:1.6;margin-bottom:24px;flex-grow:1}
+  .quote p strong{font-weight:600;background:var(--ochre);padding:1px 4px;border-radius:3px}
+  .quote .who{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(31,42,46,.1);padding-top:18px}
+  .quote .av{width:46px;height:46px;background:var(--terracotta);color:#fff;display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-size:20px;border-radius:50%;letter-spacing:-.02em;font-weight:700}
+  .quote .who .n{font-weight:600;font-size:14px}
+  .quote .who .r{font-size:11px;color:var(--mute);font-family:"JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;font-weight:500;margin-top:2px}
+
+  /* ============ GUARANTEE ============ */
+  .guar{background:var(--ochre);color:var(--ink);padding:90px 0;position:relative}
+  .guar .row{display:grid;grid-template-columns:auto 1fr auto;gap:50px;align-items:center}
+  @media(max-width:880px){.guar .row{grid-template-columns:1fr;text-align:center;gap:30px}}
+  .guar-seal{width:170px;height:170px;background:var(--ink);color:var(--ochre);border-radius:50%;display:grid;place-items:center;text-align:center;line-height:.95;position:relative;flex-shrink:0;box-shadow:0 0 0 6px var(--ochre),0 0 0 8px var(--ink)}
+  @media(max-width:880px){.guar-seal{margin:0 auto}}
+  .guar-seal .big{font-size:60px;color:var(--ochre);font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.04em;font-weight:700}
+  .guar-seal .small{font-size:11px;font-family:"JetBrains Mono",monospace;letter-spacing:.16em;margin-top:0;color:var(--ochre);font-weight:600}
+  .guar h3{font-family:"Bricolage Grotesque",sans-serif;font-size:44px;line-height:1;letter-spacing:-.03em;font-weight:700}
+  .guar p{margin-top:14px;font-size:17px;line-height:1.5;font-weight:400;max-width:560px}
+  .guar p strong{font-weight:600}
+  .guar-sig-name{font-family:"Bricolage Grotesque",sans-serif;font-style:italic;font-size:26px;font-weight:600}
+  .guar-sig{text-align:right}
+  @media(max-width:880px){.guar-sig{text-align:center}}
+
+  /* ============ FAQ ============ */
+  .faq{background:var(--bg-2);padding:140px 0}
+  .faq h2{font-size:clamp(44px,5.5vw,76px);line-height:.95;margin-bottom:14px;text-align:center;letter-spacing:-.04em}
+  .faq h2 em{font-style:italic;color:var(--terracotta);font-weight:600}
+  .faq .sub{color:var(--ink-2);font-size:18px;text-align:center;margin-bottom:60px}
+  .faq-list{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+  .faq-item{border:1px solid rgba(31,42,46,.1);border-radius:18px;background:var(--paper);overflow:hidden;transition:border-color .2s}
+  .faq-item[open]{border-color:var(--terracotta)}
+  .faq-item summary{cursor:pointer;padding:24px 28px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;font-weight:600;font-size:18px;color:var(--ink);transition:color .2s}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary:hover{color:var(--terracotta)}
+  .faq-item .plus{width:32px;height:32px;flex-shrink:0;border:2px solid var(--ink);position:relative;transition:background .2s,border-color .2s,transform .25s;border-radius:50%}
+  .faq-item .plus::before,.faq-item .plus::after{content:"";position:absolute;background:var(--ink);transition:transform .2s,background .2s}
+  .faq-item .plus::before{top:50%;left:8px;right:8px;height:2px;transform:translateY(-50%)}
+  .faq-item .plus::after{left:50%;top:8px;bottom:8px;width:2px;transform:translateX(-50%)}
+  .faq-item[open] .plus{background:var(--terracotta);border-color:var(--terracotta);transform:rotate(45deg)}
+  .faq-item[open] .plus::before,.faq-item[open] .plus::after{background:#fff}
+  .faq-item p{padding:0 28px 28px;color:var(--ink-2);font-size:16px;line-height:1.65;max-width:780px}
+
+  /* ============ FINAL CTA ============ */
+  .final{background:var(--terracotta);color:#fff;padding:140px 0;text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;top:50%;left:50%;width:900px;height:900px;background:radial-gradient(circle,rgba(217,148,58,.3),transparent 60%);transform:translate(-50%,-50%);pointer-events:none}
+  .final::after{content:"";position:absolute;bottom:-200px;right:-200px;width:500px;height:500px;border-radius:50%;border:2px dashed rgba(255,255,255,.18)}
+  .final .container{position:relative;z-index:1}
+  .final .eyebrow{color:var(--ochre)}
+  .final h2{font-size:clamp(56px,9vw,148px);line-height:.86;margin:18px auto 30px;letter-spacing:-.05em;max-width:1100px}
+  .final h2 em{font-style:italic;color:var(--ochre);font-weight:600}
+  .final h2 .strike{display:inline-block;position:relative;color:rgba(255,255,255,.55)}
+  .final h2 .strike::before{content:"";position:absolute;left:-2%;right:-2%;top:50%;height:7px;background:var(--ochre);transform:rotate(-2deg);border-radius:3px}
+  .final p{font-size:21px;max-width:700px;margin:0 auto 44px;color:#FECACA;line-height:1.55}
+  .final p strong{color:#fff;font-weight:600}
+  .final .btn{font-size:18px;padding:24px 38px;background:var(--ink);color:#fff}
+  .final .btn:hover{background:#000}
+  .final .meta{margin-top:36px;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;color:#FECACA;text-transform:uppercase;font-weight:500}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--ink);color:#A3A3A3;padding:80px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.4fr;gap:50px;margin-bottom:60px}
+  @media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}}
+  footer h5{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px;font-weight:600;font-family:"JetBrains Mono",monospace}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:14px}
+  footer a{text-decoration:none;color:#A3A3A3;transition:color .2s}
+  footer a:hover{color:var(--ochre)}
+  footer .logo .name{color:#fff}
+  footer .logo .name small{color:var(--mute)}
+  .socials{display:flex;gap:10px;margin-top:18px}
+  .socials a{width:42px;height:42px;background:var(--ink-2);border:1px solid var(--line);display:grid;place-items:center;transition:background .2s,border-color .2s,color .2s;color:#fff;border-radius:50%}
+  .socials a:hover{background:var(--terracotta);border-color:var(--terracotta)}
+  .foot-bot{border-top:1px solid var(--line);padding-top:30px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mute);font-family:"JetBrains Mono",monospace;letter-spacing:.06em}
+
+  /* ============ STICKY CTA ============ */
+  .sticky-cta{position:fixed;bottom:24px;right:24px;z-index:60;background:var(--terracotta);color:#fff;padding:14px 24px;font-weight:600;font-size:14px;letter-spacing:-.005em;text-decoration:none;display:inline-flex;align-items:center;gap:12px;box-shadow:0 18px 40px rgba(192,57,43,.45);animation:cta-pop .5s ease-out 1.5s both;transition:transform .15s;border-radius:999px}
+  .sticky-cta:hover{transform:translateY(-3px)}
+  .sticky-cta .dot{width:10px;height:10px;background:var(--ochre);border-radius:50%;animation:blink 1s infinite}
+  @keyframes cta-pop{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
+  @media(max-width:560px){.sticky-cta{bottom:14px;right:14px;padding:12px 18px;font-size:12px}}
+
+  /* ============ MISC ============ */
+  .hidden-cert{display:none !important}
+</style>
+</head>
+<body>
+
+<div class="alertbar">
+  <div class="alertbar-track">
+    <span><i></i>Cupos limitados — abril 2026</span>
+    <span><i></i>16 certificaciones internacionales</span>
+    <span><i></i><b>Hasta 40% OFF</b> por lanzamiento</span>
+    <span><i></i>Aval AHA / ILCOR / ERC</span>
+    <span><i></i>Cupos limitados — abril 2026</span>
+    <span><i></i>16 certificaciones internacionales</span>
+    <span><i></i><b>Hasta 40% OFF</b> por lanzamiento</span>
+    <span><i></i>Aval AHA / ILCOR / ERC</span>
+  </div>
+</div>
+
+<nav class="top">
+  <div class="container row">
+    <a href="#" class="logo">
+      <div class="mark"></div>
+      <div class="name">BÁRBARA MAGALLANES<small>RCP · DEA · Primeros Auxilios</small></div>
+    </a>
+    <ul>
+      <li><a href="#certificaciones">Certificaciones</a></li>
+      <li><a href="#combos">Combos</a></li>
+      <li><a href="#empresas">Empresas</a></li>
+      <li><a href="#instructora">Instructora</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#certificaciones" class="cta">Comprar ahora →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container grid">
+    <div>
+      <span class="hero-tag"><span class="dot"></span>16 certificaciones internacionales · Aval AHA / ILCOR</span>
+      <h1 class="display">
+        Si pasa <span class="terra">hoy</span>,<br>
+        <span class="underline">vos sos</span> la única<br>
+        ambulancia que <span class="strike">tiene</span>.
+      </h1>
+      <p class="lead">
+        +38.000 personas mueren cada año por causas que pudieron evitarse. Aprendé a salvar una vida con la <strong>certificación internacional</strong> que se enseña en hospitales. Para empresas y para vos. Sin atajos.
+      </p>
+      <div class="cta-row">
+        <a href="#certificaciones" class="btn btn-primary">Ver las 16 certificaciones <span class="arrow"></span></a>
+        <a href="#empresas" class="btn btn-ghost">Soy empresa <span class="arrow"></span></a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="check">✓</span>Aval internacional AHA/ILCOR</div>
+        <div><span class="check">✓</span>Online + presencial</div>
+        <div><span class="check">✓</span>Acceso de por vida</div>
+        <div><span class="check">✓</span>Garantía 7 días</div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="vital-card">
+        <span class="tag">Vital monitor</span>
+        <h3>// Frecuencia de compresión</h3>
+        <div class="ekg">
+          <svg viewBox="0 0 800 100" preserveAspectRatio="none">
+            <polyline points="0,50 80,50 95,50 100,32 110,76 120,16 130,82 140,50 220,50 235,50 240,32 250,76 260,16 270,82 280,50 360,50 375,50 380,32 390,76 400,16 410,82 420,50 500,50 515,50 520,32 530,76 540,16 550,82 560,50 640,50 655,50 660,32 670,76 680,16 690,82 700,50 800,50" fill="none" stroke="#D9943A" stroke-width="2.5"></polyline>
+          </svg>
+        </div>
+        <div class="vital-grid">
+          <div class="vital"><div class="num"><em>100-120</em></div><div class="lab">CPM · Compresiones</div></div>
+          <div class="vital"><div class="num">5–6 cm</div><div class="lab">Profundidad</div></div>
+          <div class="vital"><div class="num">30:2</div><div class="lab">Compresión / Vent.</div></div>
+          <div class="vital"><div class="num">≤<em>10s</em></div><div class="lab">Pausa máxima</div></div>
+        </div>
+      </div>
+      <div class="floating-card">
+        <small>// 7 días</small>
+        Garantía total o te devuelvo cada peso
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="container row">
+    <div class="label">// Cursos alineados con</div>
+    <div class="marks">
+      <div class="mark-item">AHA</div>
+      <div class="mark-item">ILCOR</div>
+      <div class="mark-item">ERC</div>
+      <div class="mark-item">CRUZ ROJA</div>
+      <div class="mark-item">OSHA</div>
+    </div>
+  </div>
+</div>
+
+<!-- SHOCK STATS -->
+<section class="shock">
+  <div class="container">
+    <div class="shock-head">
+      <div>
+        <span class="eyebrow">La realidad que nadie te cuenta</span>
+        <h2 class="display" style="margin-top:14px">Vas a ser <em>el primero</em> en llegar. ¿Vas a saber qué hacer?</h2>
+      </div>
+      <div class="right">
+        <p>El <strong>80% de los paros cardíacos</strong> ocurren fuera de un hospital. La diferencia entre la vida y la muerte no la marca un médico: la marca la persona que está al lado.</p>
+      </div>
+    </div>
+    <div class="shock-grid">
+      <div class="stat">
+        <div class="num"><em>4</em>min</div>
+        <div class="lab">Es lo que tarda el cerebro en sufrir daño irreversible sin oxígeno.</div>
+        <div class="src">// Fuente AHA 2024</div>
+      </div>
+      <div class="stat">
+        <div class="num"><em>90</em>%</div>
+        <div class="lab">De las víctimas mueren si nadie inicia RCP en los primeros minutos.</div>
+        <div class="src">// ILCOR Guidelines</div>
+      </div>
+      <div class="stat">
+        <div class="num"><em>3</em>×</div>
+        <div class="lab">Aumenta la supervivencia cuando un testigo aplica RCP + DEA.</div>
+        <div class="src">// Resuscitation Journal</div>
+      </div>
+      <div class="stat">
+        <div class="num">+<em>38</em>k</div>
+        <div class="lab">Argentinos mueren cada año por causas que pudieron prevenirse.</div>
+        <div class="src">// Min. Salud 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGITATION -->
+<section class="agit">
+  <div class="container agit-grid">
+    <div>
+      <span class="eyebrow light">Mírate al espejo</span>
+      <h2 class="display" style="margin-top:18px">Si pasa <em>HOY</em>, vas a quedarte paralizado.</h2>
+      <div class="agit-quote">
+        No supe qué hacer. Llamé a la ambulancia y miré cómo se moría. Tardaron 11 minutos. Once minutos viéndola morir. Hubiera dado todo por saber qué hacer.
+        <cite>— Testimonio real, septiembre 2025</cite>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow light">Las excusas que te van a costar una vida</span>
+      <ul class="agit-list">
+        <li><strong>"Yo llamo a la ambulancia y listo."</strong>Tarda 8–15 minutos. Sin RCP, ya está muerto antes que llegue.</li>
+        <li><strong>"Hay otra persona que sabe."</strong>El 95% de la gente no sabe. Estadística real, no opinión.</li>
+        <li><strong>"Lo veo en YouTube si pasa."</strong>No vas a tener tiempo. No vas a tener señal. No vas a recordar nada.</li>
+        <li><strong>"Soy joven, no me va a tocar."</strong>Los paros en jóvenes deportistas crecieron 47% en 5 años.</li>
+        <li><strong>"Es muy caro / no tengo tiempo."</strong>Cuesta menos que una cena. Dura menos que una serie de Netflix.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION (NEW) -->
+<section class="transform">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">El antes y el después</span>
+      <h2 class="display">Hay dos tipos de personas. Vos elegís cuál querés ser <em>cuando pase</em>.</h2>
+      <p class="sub">No es magia. No es suerte. Es una cuestión de <strong>16 horas de capacitación</strong> bien invertidas.</p>
+    </div>
+    <div class="transform-grid">
+      <div class="tr-card tr-before">
+        <span class="label">Sin certificación</span>
+        <h3>El espectador.</h3>
+        <ul>
+          <li>Se queda paralizado, observando, sin saber qué hacer</li>
+          <li>Llama al 107 y reza para que lleguen a tiempo</li>
+          <li>Mira morir a alguien y carga la culpa el resto de su vida</li>
+          <li>Vive con miedo: "¿y si pasa con mi hijo? ¿con mi pareja?"</li>
+          <li>Depende del azar y de la velocidad de una ambulancia</li>
+          <li>Cuando vuelve a ver una emergencia, también se queda quieto</li>
+        </ul>
+      </div>
+      <div class="tr-arrow" aria-hidden="true">→</div>
+      <div class="tr-card tr-after">
+        <span class="label">Con certificación</span>
+        <h3>El que actúa.</h3>
+        <ul>
+          <li>Reconoce la emergencia y reacciona en menos de 10 segundos</li>
+          <li>Inicia RCP, usa el DEA y triplica la supervivencia</li>
+          <li>Salva una vida y vuelve a casa con otra historia para contar</li>
+          <li>Es el primer recurso para su familia, su empresa, su comunidad</li>
+          <li>Tiene autoridad y certificación validada internacionalmente</li>
+          <li>Forma parte del 5% que sí sabe qué hacer cuando todo se rompe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS — EL CATÁLOGO COMPLETO -->
+<section class="menu" id="certificaciones">
+  <div class="container">
+    <div class="menu-intro">
+      <div>
+        <span class="eyebrow">El catálogo completo</span>
+        <h2 class="display" style="margin-top:14px">16 certificaciones. <em>Una para cada momento de tu vida.</em></h2>
+      </div>
+      <div class="right">
+        <p>Cada certificación es <strong>independiente, profesional y con aval internacional</strong>. Elegí solo la que necesitás, o sumá varias para ahorrar. Todas incluyen material descargable, examen y certificado digital con código QR de validación.</p>
+      </div>
+    </div>
+
+    <div class="filter-bar" id="filter-bar">
+      <span class="filter-label">// Filtrar:</span>
+      <button class="active" data-filter="all">Todas (16)</button>
+      <button data-filter="rcp">RCP &amp; DEA</button>
+      <button data-filter="basic">P. Socorros Básicos</button>
+      <button data-filter="standard">P. S. Estándares</button>
+      <button data-filter="brigadista">Brigadista</button>
+    </div>
+
+    <div class="cert-list" id="cert-list">
+
+      <!-- BLOCK: RCP & DEA -->
+      <a href="#" class="cert spotlight" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge">★ Más vendido</span>
+          <div class="hours"><span class="n">5</span><span class="u">HS</span></div>
+        </div>
+        <h4>RCP y DEA</h4>
+        <p class="desc">El combo esencial. Reanimación cardiopulmonar completa más uso de desfibrilador automático. Lo que todo adulto debería saber.</p>
+        <div class="modules">
+          <span class="mod">RCP</span><span class="mod">DEA</span><span class="mod">Adultos</span><span class="mod">Pediátrico</span>
+        </div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$24.900</span><span class="strike">Antes $39.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge ochre">RCP</span>
+          <div class="hours"><span class="n">3</span><span class="u">HS</span></div>
+        </div>
+        <h4>RCP</h4>
+        <p class="desc">Reanimación cardiopulmonar tradicional, técnica completa con compresiones y ventilaciones, adultos y niños.</p>
+        <div class="modules"><span class="mod">RCP</span><span class="mod">Adultos</span><span class="mod">Niños</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$16.900</span><span class="strike">Antes $24.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge">Hands-only</span>
+          <div class="hours"><span class="n">2</span><span class="u">HS</span></div>
+        </div>
+        <h4>RCP solo compresiones</h4>
+        <p class="desc">La técnica más simple y efectiva. Ideal para empezar y cubrir el 80% de las situaciones reales.</p>
+        <div class="modules"><span class="mod">RCP</span><span class="mod">Hands-only</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$12.900</span><span class="strike">Antes $19.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge ochre">DEA</span>
+          <div class="hours"><span class="n">3</span><span class="u">HS</span></div>
+        </div>
+        <h4>DEA</h4>
+        <p class="desc">Manejo del Desfibrilador Externo Automático. Cómo reconocerlo, prepararlo y aplicarlo en segundos.</p>
+        <div class="modules"><span class="mod">DEA</span><span class="mod">Desfibrilador</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$16.900</span><span class="strike">Antes $24.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge">RCP + DEA</span>
+          <div class="hours"><span class="n">4</span><span class="u">HS</span></div>
+        </div>
+        <h4>RCP solo compresiones y DEA</h4>
+        <p class="desc">La fórmula más rápida y aplicable. Compresiones efectivas más uso de desfibrilador.</p>
+        <div class="modules"><span class="mod">RCP</span><span class="mod">DEA</span><span class="mod">Hands-only</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$19.900</span><span class="strike">Antes $29.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="rcp">
+        <div class="topline">
+          <span class="badge terra">★ OVA incluido</span>
+          <div class="hours"><span class="n">5</span><span class="u">HS</span></div>
+        </div>
+        <h4>RCP, OVA y DEA</h4>
+        <p class="desc">Suma el manejo de Obstrucción de Vía Aérea (atragantamientos): la causa #1 de muerte en niños menores de 4.</p>
+        <div class="modules"><span class="mod">RCP</span><span class="mod">OVA</span><span class="mod">DEA</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$24.900</span><span class="strike">Antes $36.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <!-- BLOCK: PRIMEROS SOCORROS BÁSICOS -->
+      <a href="#" class="cert" data-hotmart="" data-cat="basic">
+        <div class="topline">
+          <span class="badge olive">PSB</span>
+          <div class="hours"><span class="n">5</span><span class="u">HS</span></div>
+        </div>
+        <h4>Primeros Socorros Básicos</h4>
+        <p class="desc">Heridas, hemorragias, quemaduras, fracturas, desmayos. La base para responder ante emergencias cotidianas.</p>
+        <div class="modules"><span class="mod">PSB</span><span class="mod">Heridas</span><span class="mod">Quemaduras</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$24.900</span><span class="strike">Antes $36.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert spotlight" data-hotmart="" data-cat="basic">
+        <div class="topline">
+          <span class="badge">★ Recomendado</span>
+          <div class="hours"><span class="n">8</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Básicos con RCP y DEA</h4>
+        <p class="desc">El curso más popular: cubre primeros socorros, RCP y desfibrilador en un solo programa. Ideal para padres, profes y cuidadores.</p>
+        <div class="modules"><span class="mod">PSB</span><span class="mod">RCP</span><span class="mod">DEA</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$39.900</span><span class="strike">Antes $59.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="basic">
+        <div class="topline">
+          <span class="badge olive">PSB + RCP</span>
+          <div class="hours"><span class="n">6</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Básicos con RCP solo compresiones</h4>
+        <p class="desc">Primeros socorros básicos más la versión hands-only del RCP. Práctico, rápido, aplicable en cualquier emergencia.</p>
+        <div class="modules"><span class="mod">PSB</span><span class="mod">RCP</span><span class="mod">Hands-only</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$29.900</span><span class="strike">Antes $44.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="basic">
+        <div class="topline">
+          <span class="badge olive">PSB + RCP + DEA</span>
+          <div class="hours"><span class="n">7</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Básicos con RCP solo comp. y DEA</h4>
+        <p class="desc">PSB + hands-only + desfibrilador automático. Triple combo en formato ágil.</p>
+        <div class="modules"><span class="mod">PSB</span><span class="mod">RCP</span><span class="mod">DEA</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$34.900</span><span class="strike">Antes $52.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="basic">
+        <div class="topline">
+          <span class="badge olive">PS + RCP</span>
+          <div class="hours"><span class="n">7</span><span class="u">HS</span></div>
+        </div>
+        <h4>Primeros Socorros y RCP</h4>
+        <p class="desc">Programa intermedio: primeros socorros completos más reanimación cardiopulmonar tradicional.</p>
+        <div class="modules"><span class="mod">PS</span><span class="mod">RCP</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$34.900</span><span class="strike">Antes $52.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <!-- BLOCK: PSE -->
+      <a href="#" class="cert" data-hotmart="" data-cat="standard">
+        <div class="topline">
+          <span class="badge ochre">PSE</span>
+          <div class="hours"><span class="n">13</span><span class="u">HS</span></div>
+        </div>
+        <h4>Primeros Socorros Estándares</h4>
+        <p class="desc">Capacitación profesional completa de primeros auxilios. Para quienes quieren responder con autoridad y autonomía.</p>
+        <div class="modules"><span class="mod">PSE</span><span class="mod">Avanzado</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$54.900</span><span class="strike">Antes $79.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert spotlight" data-hotmart="" data-cat="standard">
+        <div class="topline">
+          <span class="badge">★ Más completo</span>
+          <div class="hours"><span class="n">16</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Estándares con RCP y DEA</h4>
+        <p class="desc">El programa más completo del catálogo. Primeros socorros profesionales más RCP y desfibrilador automático.</p>
+        <div class="modules"><span class="mod">PSE</span><span class="mod">RCP</span><span class="mod">DEA</span><span class="mod">Pro</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$74.900</span><span class="strike">Antes $109.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="standard">
+        <div class="topline">
+          <span class="badge ochre">PSE + RCP</span>
+          <div class="hours"><span class="n">14</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Estándares con RCP solo compresiones</h4>
+        <p class="desc">Programa estándar profesional combinado con la versión hands-only del RCP.</p>
+        <div class="modules"><span class="mod">PSE</span><span class="mod">RCP</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$59.900</span><span class="strike">Antes $89.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <a href="#" class="cert" data-hotmart="" data-cat="standard">
+        <div class="topline">
+          <span class="badge ochre">PSE + RCP + DEA</span>
+          <div class="hours"><span class="n">15</span><span class="u">HS</span></div>
+        </div>
+        <h4>P. S. Estándares con RCP solo comp. y DEA</h4>
+        <p class="desc">Programa estándar más hands-only más desfibrilador automático. Para profesionales aplicados.</p>
+        <div class="modules"><span class="mod">PSE</span><span class="mod">RCP</span><span class="mod">DEA</span></div>
+        <div class="pricerow">
+          <div class="price"><span class="amt">$69.900</span><span class="strike">Antes $99.900</span></div>
+          <span class="buy">Comprar</span>
+        </div>
+      </a>
+
+      <!-- BRIGADISTA — full row -->
+      <a href="#" class="cert brigadista" data-hotmart="" data-cat="brigadista">
+        <div class="icon-wrap">⛑</div>
+        <div>
+          <span class="badge">Programa empresarial</span>
+          <h4 style="margin-top:8px">Brigadista de Emergencias</h4>
+          <p class="desc">Programa integral para formar brigadistas internos en empresas, instituciones y organismos. Incluye RCP, DEA, primeros socorros estándares, evacuación, manejo inicial de incendios, comunicación de emergencias y respuesta táctica.</p>
+          <div class="modules">
+            <span class="mod">Brigadista</span><span class="mod">Evacuación</span><span class="mod">Incendio</span><span class="mod">Comunicación</span><span class="mod">PS Avanzado</span>
+          </div>
+        </div>
+        <div class="cta-side">
+          <span class="strike-big">Antes $189.900</span>
+          <span class="price-big">$129.900</span>
+          <span class="buy" style="background:var(--terracotta);color:#fff">Comprar →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="display">De la <em>compra</em> al certificado<br>en 4 pasos.</h2>
+    </div>
+    <div class="how-steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h4>Elegís y pagás</h4>
+        <p>Comprás la certificación que querés con un clic vía Hotmart. Cuotas, débito, transferencia.</p>
+        <div class="meta">// 1 minuto</div>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h4>Acceso inmediato</h4>
+        <p>Recibís acceso instantáneo al campus virtual. Material descargable, videos en HD, manual profesional.</p>
+        <div class="meta">// Acceso de por vida</div>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h4>Aprendés y practicás</h4>
+        <p>A tu ritmo, desde tu casa o trabajo. Soporte directo por WhatsApp y prácticas en vivo opcionales.</p>
+        <div class="meta">// 2hs a 16hs según el curso</div>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h4>Certificás</h4>
+        <p>Aprobás el examen y descargás tu certificado digital con código QR de validación internacional.</p>
+        <div class="meta">// Aval AHA / ILCOR</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUSES (NEW) -->
+<section class="bonus">
+  <div class="container">
+    <div class="bonus-head">
+      <div>
+        <span class="eyebrow">Lo que viene incluido</span>
+        <h2 class="display">No solo te llevás el curso.<br><em>Te llevás un arsenal.</em></h2>
+      </div>
+      <div class="right">
+        <p>Comprar cualquier certificación te da acceso instantáneo a <strong>+8 bonos profesionales</strong> que valen más que el curso mismo. Material que normalmente solo se entrega en capacitaciones corporativas.</p>
+      </div>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card large">
+        <span class="gift">BONO PRINCIPAL</span>
+        <h4>Manual profesional digital + impreso</h4>
+        <p>Más de 180 páginas con protocolos, ilustraciones, checklists y casos clínicos. Hecho por una instructora certificada, no copiado de internet. Te lo enviamos impreso a tu domicilio sin costo.</p>
+        <span class="value">Valor: $29.900 — INCLUIDO GRATIS</span>
+      </div>
+      <div class="bonus-card large">
+        <span class="gift">BONO PRINCIPAL</span>
+        <h4>Soporte directo por WhatsApp 1:1</h4>
+        <p>Acceso por 90 días al WhatsApp directo de Bárbara. Preguntas, dudas, casos reales. Cero bots, cero formularios. Tu instructora cuando la necesites.</p>
+        <span class="value">Valor: $39.900 — INCLUIDO GRATIS</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Kit emergencia hogar</h4>
+        <p>Plan imprimible con números útiles, mapa de hospitales y protocolo paso a paso para tu casa.</p>
+        <span class="value">Valor: $4.900</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Plantilla de simulacro empresa</h4>
+        <p>Cómo armar y ejecutar un simulacro de evacuación en tu lugar de trabajo, paso a paso.</p>
+        <span class="value">Valor: $7.900</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Comunidad privada de alumnos</h4>
+        <p>Grupo cerrado con +2.400 alumnos, casos reales, actualizaciones, eventos en vivo.</p>
+        <span class="value">Valor: $9.900/año</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Actualizaciones de por vida</h4>
+        <p>Cuando AHA / ILCOR actualizan los protocolos, vos recibís el material nuevo gratis.</p>
+        <span class="value">Valor: incalculable</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Certificado digital con QR</h4>
+        <p>Validación internacional. Compartible en LinkedIn, CV y para presentar ante empleadores.</p>
+        <span class="value">Valor: $5.900</span>
+      </div>
+      <div class="bonus-card">
+        <span class="gift">BONO</span>
+        <h4>Guía pediátrica de bolsillo</h4>
+        <p>Atragantamientos, convulsiones febriles, golpes. Ilustrada, plastificada, lista para imprimir.</p>
+        <span class="value">Valor: $4.900</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMBOS -->
+<section class="combo" id="combos">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow light">Sumá certificaciones — ahorrá hasta 50%</span>
+      <h2 class="display">¿Querés más de una?<br><em>Combinate y ahorrá.</em></h2>
+      <p>Stackear certificaciones es más inteligente que comprarlas sueltas. Te ahorrás dinero y tu CV pega más fuerte.</p>
+    </div>
+    <div class="combos-grid">
+      <div class="combo-card">
+        <span class="qty">// 2 certificaciones</span>
+        <h3>Combo Hogar</h3>
+        <ul class="items">
+          <li>RCP y DEA (5HS)</li>
+          <li>Primeros Socorros Básicos (5HS)</li>
+        </ul>
+        <div class="pricerow">
+          <div class="price-block">
+            <span class="strike">Antes $49.800</span>
+            <span class="amt">$36.900<em>ARS</em></span>
+          </div>
+          <span class="savings">Ahorrás $12.900</span>
+        </div>
+        <a href="#" class="btn btn-ochre" data-hotmart="">Llevarme el combo →</a>
+      </div>
+
+      <div class="combo-card featured">
+        <span class="save">Más vendido</span>
+        <span class="qty">// 3 certificaciones</span>
+        <h3>Combo Familia + Trabajo</h3>
+        <ul class="items">
+          <li>P. S. Básicos con RCP y DEA (8HS)</li>
+          <li>RCP, OVA y DEA (5HS)</li>
+          <li>Primeros Socorros Básicos (5HS)</li>
+        </ul>
+        <div class="pricerow">
+          <div class="price-block">
+            <span class="strike">Antes $89.700</span>
+            <span class="amt">$59.900<em>ARS</em></span>
+          </div>
+          <span class="savings">Ahorrás $29.800 (-33%)</span>
+        </div>
+        <a href="#" class="btn btn-ochre" data-hotmart="">Llevarme el combo →</a>
+      </div>
+
+      <div class="combo-card">
+        <span class="qty">// 4 certificaciones</span>
+        <h3>Combo Profesional</h3>
+        <ul class="items">
+          <li>P. S. Estándares con RCP y DEA (16HS)</li>
+          <li>RCP, OVA y DEA (5HS)</li>
+          <li>P. S. Básicos (5HS)</li>
+          <li>Brigadista de Emergencias</li>
+        </ul>
+        <div class="pricerow">
+          <div class="price-block">
+            <span class="strike">Antes $254.600</span>
+            <span class="amt">$149.900<em>ARS</em></span>
+          </div>
+          <span class="savings">Ahorrás $104.700 (-41%)</span>
+        </div>
+        <a href="#" class="btn btn-ochre" data-hotmart="">Llevarme el combo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCES -->
+<section class="audience" id="empresas">
+  <div class="container">
+    <span class="eyebrow" style="display:block;text-align:center">Para quién</span>
+    <h2 class="display" style="margin-top:14px">No es para cualquiera.<br>Es para los que <em>actúan</em>.</h2>
+    <p class="sub">Si dirigís una empresa o sos mamá de dos hijos, hay una certificación con tu nombre.</p>
+
+    <div class="aud-grid">
+      <div class="aud b2b">
+        <span class="corner">B2B · Empresas</span>
+        <h3>Cumplí la ley.<br><em>Protegé tu equipo.</em></h3>
+        <p>La Ley 19.587 exige personal capacitado en RCP y primeros auxilios en tu empresa. Multas, demandas y responsabilidad civil son reales. Capacitar no es un gasto: es un seguro.</p>
+        <ul>
+          <li><strong>Programas in-company</strong> en tus instalaciones o las nuestras</li>
+          <li><strong>Brigadistas certificados</strong> con aval internacional</li>
+          <li><strong>Facturación A</strong> y deducción impositiva al 100%</li>
+          <li><strong>Descuentos por volumen</strong> desde 10 colaboradores</li>
+          <li><strong>Cumplimiento normativo</strong> Ley 19.587 y ART</li>
+          <li><strong>Reporte ejecutivo</strong> de capacitación al RR.HH.</li>
+        </ul>
+        <a href="#contacto" class="btn btn-ochre" style="margin-top:30px">Cotizar para mi empresa <span class="arrow"></span></a>
+      </div>
+
+      <div class="aud">
+        <span class="corner">B2C · Particulares</span>
+        <h3>Sé el héroe que tu familia <em>necesita</em>.</h3>
+        <p>No tenés que ser médico para salvar una vida. En menos de un fin de semana vas a saber exactamente qué hacer cuando todos los demás se queden mirando.</p>
+        <ul>
+          <li><strong>Padres y madres</strong> que quieren proteger a sus hijos</li>
+          <li><strong>Profesores y maestros</strong> con responsabilidad sobre menores</li>
+          <li><strong>Personal trainers</strong> y profesores de educación física</li>
+          <li><strong>Cuidadores y enfermeros</strong> de adultos mayores</li>
+          <li><strong>Cualquier persona</strong> que entienda que el tiempo apremia</li>
+          <li><strong>Acceso de por vida</strong> al material y actualizaciones</li>
+        </ul>
+        <a href="#certificaciones" class="btn btn-primary" style="margin-top:30px">Ver certificaciones <span class="arrow"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTOR -->
+<section class="instr" id="instructora">
+  <div class="container instr-grid">
+    <div class="instr-photo">
+      <div class="ph">[ Foto profesional<br>Bárbara Magallanes<br>4:5 — uniforme institucional ]</div>
+      <div class="stamp"><small>// Instructora</small>+10 años<br>salvando vidas</div>
+    </div>
+    <div>
+      <span class="eyebrow">Tu instructora</span>
+      <h2 class="display">Bárbara Magallanes.<br><em>Sin atajos. Sin teoría barata.</em></h2>
+      <p>Instructora certificada en RCP, DEA y Primeros Auxilios con aval internacional. Más de una década formando brigadistas, equipos corporativos, profesionales de la salud y familias que entendieron que aprender a salvar una vida no es opcional.</p>
+      <p>Cada certificación cumple con los protocolos vigentes de AHA, ILCOR y ERC. Sin atajos, sin contenido reciclado, sin "cursos express". Acá se aprende como se enseña en un hospital.</p>
+      <div class="creds">
+        <div class="cred"><div class="n">10+</div><div class="l">Años de experiencia</div></div>
+        <div class="cred"><div class="n">2.400+</div><div class="l">Alumnos certificados</div></div>
+        <div class="cred"><div class="n">85+</div><div class="l">Empresas capacitadas</div></div>
+        <div class="cred"><div class="n">16</div><div class="l">Certificaciones disponibles</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="container">
+    <span class="eyebrow">Historias reales</span>
+    <h2 class="display">2.400 personas.<br><em>Vidas salvadas reales.</em></h2>
+    <p class="sub">Lo que cuentan quienes ya hicieron el curso (y, en algunos casos, ya lo aplicaron).</p>
+
+    <div class="testi-grid">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Tres meses después del curso, mi suegro tuvo un paro en una reunión familiar. Hice las compresiones hasta que llegó la ambulancia. <strong>Está vivo.</strong> Le debo este curso, literalmente.</p>
+        <div class="who">
+          <div class="av">M</div>
+          <div><div class="n">Mariana López</div><div class="r">RCP y DEA · 2025</div></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Capacitamos a los 32 colaboradores de nuestra fábrica. Más allá del cumplimiento legal, la gente quedó <strong>motivada y agradecida</strong>. Ya cerramos la próxima ronda con Bárbara.</p>
+        <div class="who">
+          <div class="av">D</div>
+          <div><div class="n">Diego Ferrari</div><div class="r">RR.HH. · Industria alimenticia</div></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Soy profe de educación física en un colegio. Hice el de 16hs. <strong>Aprendí más en dos días que en años de universidad.</strong> Bárbara explica como nadie.</p>
+        <div class="who">
+          <div class="av">L</div>
+          <div><div class="n">Lucas Vidal</div><div class="r">PSE con RCP y DEA · 2025</div></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Hice el de RCP y DEA con mi hija de 16 años. Ahora las dos sabemos qué hacer. <strong>Inversión más importante del año.</strong> Recomendado 100%.</p>
+        <div class="who">
+          <div class="av">S</div>
+          <div><div class="n">Sofía Quiroga</div><div class="r">Mamá · RCP y DEA</div></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Como personal trainer, <strong>NECESITAS este curso. Punto.</strong> No es opcional. La parte de OVA y DEA está espectacular. Imprescindible.</p>
+        <div class="who">
+          <div class="av">F</div>
+          <div><div class="n">Federico Méndez</div><div class="r">PT · RCP, OVA y DEA</div></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>Capacitamos a la brigada del edificio. Profesional, clara, didáctica. <strong>El material es de altísimo nivel.</strong> Volveríamos a contratar sin dudarlo.</p>
+        <div class="who">
+          <div class="av">C</div>
+          <div><div class="n">Carolina Iturbe</div><div class="r">Administradora · Brigadista</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guar">
+  <div class="container row">
+    <div class="guar-seal">
+      <div>
+        <div class="big">7</div>
+        <div class="small">DÍAS</div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow dark">Garantía incondicional</span>
+      <h3 style="margin-top:8px">Si no es lo que esperabas, te devuelvo cada peso.</h3>
+      <p>Tenés 7 días desde la compra para evaluar el curso. Si no estás 100% conforme, escribime y te devuelvo el dinero. <strong>Sin preguntas, sin trámites, sin letra chica.</strong> Confío tanto en lo que enseño que asumo todo el riesgo por vos.</p>
+    </div>
+    <div class="guar-sig">
+      <div class="guar-sig-name">Bárbara Magallanes</div>
+      <div class="mono" style="font-size:11px;color:var(--ink-2);letter-spacing:.1em;margin-top:6px;text-transform:uppercase;font-weight:600">// Instructora</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <span class="eyebrow" style="display:block;text-align:center">Preguntas frecuentes</span>
+    <h2 class="display" style="margin-top:14px">Todo lo que querés saber<br>antes de <em>inscribirte</em>.</h2>
+    <p class="sub">Si tenés otra duda, escribinos por WhatsApp y te contestamos en menos de 1 hora.</p>
+
+    <div class="faq-list">
+      <details class="faq-item" open="">
+        <summary>¿La certificación tiene aval internacional?<span class="plus"></span></summary>
+        <p>Sí. Todas las certificaciones cumplen con los protocolos vigentes de la American Heart Association (AHA) y las recomendaciones del International Liaison Committee on Resuscitation (ILCOR). El certificado tiene código QR de validación digital y reconocimiento internacional.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Las certificaciones se compran por separado?<span class="plus"></span></summary>
+        <p>Exacto. Cada una de las 16 certificaciones es un producto independiente. Comprás solo la que necesitás. Si querés varias, conviene aprovechar los Combos donde ahorrás hasta el 41% del valor total.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Es 100% online o tiene parte presencial?<span class="plus"></span></summary>
+        <p>Depende de la certificación. La teoría es online a tu ritmo. Algunas requieren una práctica presencial supervisada en CABA y GBA, o se coordina in-company para empresas.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto dura el acceso al curso?<span class="plus"></span></summary>
+        <p>Acceso de por vida con todas las actualizaciones. Cuando AHA o ILCOR cambian los protocolos, recibís el material nuevo sin pagar nada extra.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo facturar a mi empresa?<span class="plus"></span></summary>
+        <p>Sí, emitimos Factura A o B. Para empresas tenemos planes corporativos in-company con descuentos por volumen desde 10 colaboradores y reportes ejecutivos para RR.HH.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿No tengo experiencia médica, puedo hacerlo igual?<span class="plus"></span></summary>
+        <p>Para eso es el curso. El 95% de nuestros alumnos no tiene formación médica. Está diseñado para que cualquier persona pueda aplicar las técnicas de manera segura y efectiva.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa si no me sirve el curso?<span class="plus"></span></summary>
+        <p>Tenés 7 días para pedir el reembolso completo. Sin preguntas. Te devolvemos el 100% por el mismo medio que pagaste.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo es el pago? ¿Aceptan cuotas?<span class="plus"></span></summary>
+        <p>Procesamos los pagos vía Hotmart: cuotas con tarjeta, débito, transferencia, link de pago o billeteras virtuales. Internacional y seguro.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿La certificación de Brigadista incluye evacuación e incendios?<span class="plus"></span></summary>
+        <p>Sí. Incluye RCP, DEA, primeros socorros estándares, evacuación, manejo inicial de incendios, comunicación de emergencias y respuesta táctica básica.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="contacto">
+  <div class="container">
+    <span class="eyebrow">Última llamada</span>
+    <h2 class="display">
+      Cada día que <span class="strike">esperás</span><br>
+      es una vida que<br>
+      <em>no podés salvar.</em>
+    </h2>
+    <p>El paro cardíaco no avisa. El accidente no avisa. La emergencia no avisa.<br>
+    Lo único que vos podés controlar es <strong>estar preparado cuando pase</strong>.</p>
+    <a href="#certificaciones" class="btn">Elegir mi certificación →</a>
+    <div class="meta">// Pago seguro vía Hotmart · Garantía 7 días · Cupos limitados</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:18px">
+          <div class="mark"></div>
+          <div class="name">BÁRBARA MAGALLANES<small>RCP · DEA · Primeros Auxilios</small></div>
+        </a>
+        <p style="font-size:13px;line-height:1.6;color:var(--mute);max-width:320px">Capacitación profesional en RCP, DEA y Primeros Auxilios con certificación internacional. Para empresas, instituciones y comunidad.</p>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7c0-1 .3-2 2-2h2V1.2c-.3 0-1.5-.2-3-.2-3 0-5 1.8-5 5v3H6v4h3v8h4z"></path></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11 11 0 002.6 17.7L1 23l5.4-1.5A11 11 0 1020 4zm-8 18a9 9 0 01-4.6-1.3l-.3-.2-3.2.9.9-3.1-.2-.3A9 9 0 1112 22zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1a7.4 7.4 0 01-3.6-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.4 0-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.7 4.2.6.3 1.2.4 1.6.5.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.7.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3z"></path></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h4v16H4zm2-1.5A2 2 0 116 6.5a2 2 0 010-4zM10 8h4v2c.5-1 2-2.5 4-2.5 4 0 5 2.5 5 6V20h-4v-6c0-1.5-.5-2.5-2-2.5s-2.5 1-2.5 2.5V20h-4z"></path></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 8.5a6.6 6.6 0 01-4-1.3v7.4a5.7 5.7 0 11-5.7-5.7c.3 0 .5 0 .8.1v3a2.7 2.7 0 102.7 2.7V2h2.7A4 4 0 0019 5.5z"></path></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7.5a3 3 0 00-2-2C18 5 12 5 12 5s-6 0-8 .5a3 3 0 00-2 2C2 9.5 2 12 2 12s0 2.5.4 4.5a3 3 0 002 2c2 .5 8 .5 8 .5s6 0 8-.5a3 3 0 002-2c.4-2 .4-4.5.4-4.5s0-2.5-.4-4.5zM10 16V8l5 4z"></path></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Certificaciones</h5>
+        <ul>
+          <li><a href="#certificaciones">RCP &amp; DEA (6)</a></li>
+          <li><a href="#certificaciones">P. Socorros Básicos (5)</a></li>
+          <li><a href="#certificaciones">P. S. Estándares (4)</a></li>
+          <li><a href="#certificaciones">Brigadista</a></li>
+          <li><a href="#combos">Combos &amp; ahorros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#empresas">Cursos in-company</a></li>
+          <li><a href="#empresas">Para RR.HH.</a></li>
+          <li><a href="#instructora">Sobre Bárbara</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="mailto:hola@barbaramagallanes.com">hola@barbaramagallanes.com</a></li>
+          <li><a href="#">+54 9 11 0000-0000 (WhatsApp)</a></li>
+          <li>Buenos Aires · Argentina</li>
+          <li>Cursos online + presenciales</li>
+        </ul>
+        <a href="#certificaciones" class="btn btn-primary" style="margin-top:18px;padding:12px 18px;font-size:12px">Comprar ahora <span class="arrow"></span></a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div>// © 2026 BÁRBARA MAGALLANES — RCP &amp; PRIMEROS AUXILIOS · Todos los derechos reservados</div>
+      <div>// Pago seguro vía Hotmart</div>
+    </div>
+  </div>
+</footer>
+
+<a href="#certificaciones" class="sticky-cta">
+  <span class="dot"></span>
+  Comprar certificación →
+</a>
+
+</body></html>
