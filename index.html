@@ -501,6 +501,14 @@
   @keyframes cta-pop{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
   @media(max-width:560px){.sticky-cta{bottom:14px;right:14px;padding:12px 18px;font-size:12px}}
 
+
+  /* ============ END SOCIALS ============ */
+  .end-social{background:var(--bg);padding:28px 0 46px}
+  .end-social .wrap{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px}
+  .end-social .label{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-right:8px}
+  .end-social .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--paper);border:1px solid rgba(31,42,46,.12);text-decoration:none;font-size:13px;font-weight:600;color:var(--ink);transition:all .2s}
+  .end-social .chip:hover{background:var(--terracotta);border-color:var(--terracotta);color:#fff}
+
   /* ============ MISC ============ */
   .hidden-cert{display:none !important}
 </style>
@@ -943,9 +951,9 @@
         <div>
           <span class="badge">Programa empresarial</span>
           <h4 style="margin-top:8px">Brigadista de Emergencias</h4>
-          <p class="desc">Programa integral para formar brigadistas internos en empresas, instituciones y organismos. Incluye RCP, DEA, primeros socorros estándares, evacuación, manejo inicial de incendios, comunicación de emergencias y respuesta táctica.</p>
+          <p class="desc">Programa integral para formar brigadistas internos en empresas, instituciones y organismos. Incluye RCP, DEA, primeros socorros estándares, comunicación de emergencias y respuesta táctica. <strong>No incluye evacuación ni manejo de incendios.</strong></p>
           <div class="modules">
-            <span class="mod">Brigadista</span><span class="mod">Evacuación</span><span class="mod">Incendio</span><span class="mod">Comunicación</span><span class="mod">PS Avanzado</span>
+            <span class="mod">Brigadista</span><span class="mod">RCP</span><span class="mod">DEA</span><span class="mod">Comunicación</span><span class="mod">PS Avanzado</span>
           </div>
         </div>
         <div class="cta-side">
@@ -1178,7 +1186,7 @@
     <div>
       <span class="eyebrow">Tu instructora</span>
       <h2 class="display">Bárbara Magallanes.<br><em>Sin atajos. Sin teoría barata.</em></h2>
-      <p>Instructora certificada en RCP, DEA y Primeros Auxilios con aval internacional. Más de una década formando brigadistas, equipos corporativos, profesionales de la salud y familias que entendieron que aprender a salvar una vida no es opcional.</p>
+      <p>Instructora certificada en RCP, DEA y Primeros Auxilios con aval internacional. Más de una década formando brigadistas.</p>
       <p>Cada certificación cumple con los protocolos vigentes de AHA, ILCOR y ERC. Sin atajos, sin contenido reciclado, sin "cursos express". Acá se aprende como se enseña en un hospital.</p>
       <div class="creds">
         <div class="cred"><div class="n">10+</div><div class="l">Años de experiencia</div></div>
@@ -1312,8 +1320,8 @@
         <p>Procesamos los pagos vía Hotmart: cuotas con tarjeta, débito, transferencia, link de pago o billeteras virtuales. Internacional y seguro.</p>
       </details>
       <details class="faq-item">
-        <summary>¿La certificación de Brigadista incluye evacuación e incendios?<span class="plus"></span></summary>
-        <p>Sí. Incluye RCP, DEA, primeros socorros estándares, evacuación, manejo inicial de incendios, comunicación de emergencias y respuesta táctica básica.</p>
+        <summary>¿La certificación de Brigadista incluye evacuación e incendio?<span class="plus"></span></summary>
+        <p>No. Incluye RCP, DEA, primeros socorros estándares, comunicación de emergencias y respuesta táctica básica. No incluye evacuación ni manejo inicial de incendios.</p>
       </details>
     </div>
   </div>
@@ -1346,11 +1354,11 @@
         </a>
         <p style="font-size:13px;line-height:1.6;color:var(--mute);max-width:320px">Capacitación profesional en RCP, DEA y Primeros Auxilios con certificación internacional. Para empresas, instituciones y comunidad.</p>
         <div class="socials" aria-label="Redes sociales">
-          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
+          <a href="https://www.instagram.com/salvandorcp" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor"></circle></svg></a>
           <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7c0-1 .3-2 2-2h2V1.2c-.3 0-1.5-.2-3-.2-3 0-5 1.8-5 5v3H6v4h3v8h4z"></path></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11 11 0 002.6 17.7L1 23l5.4-1.5A11 11 0 1020 4zm-8 18a9 9 0 01-4.6-1.3l-.3-.2-3.2.9.9-3.1-.2-.3A9 9 0 1112 22zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1a7.4 7.4 0 01-3.6-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.4 0-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.7 4.2.6.3 1.2.4 1.6.5.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.7.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3z"></path></svg></a>
+          <a href="https://wa.me/5491136573720" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4A11 11 0 002.6 17.7L1 23l5.4-1.5A11 11 0 1020 4zm-8 18a9 9 0 01-4.6-1.3l-.3-.2-3.2.9.9-3.1-.2-.3A9 9 0 1112 22zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1a7.4 7.4 0 01-3.6-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.4 0-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.7 4.2.6.3 1.2.4 1.6.5.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.7.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3z"></path></svg></a>
           <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h4v16H4zm2-1.5A2 2 0 116 6.5a2 2 0 010-4zM10 8h4v2c.5-1 2-2.5 4-2.5 4 0 5 2.5 5 6V20h-4v-6c0-1.5-.5-2.5-2-2.5s-2.5 1-2.5 2.5V20h-4z"></path></svg></a>
-          <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 8.5a6.6 6.6 0 01-4-1.3v7.4a5.7 5.7 0 11-5.7-5.7c.3 0 .5 0 .8.1v3a2.7 2.7 0 102.7 2.7V2h2.7A4 4 0 0019 5.5z"></path></svg></a>
+          <a href="https://www.tiktok.com/@salvando.vidas414" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 8.5a6.6 6.6 0 01-4-1.3v7.4a5.7 5.7 0 11-5.7-5.7c.3 0 .5 0 .8.1v3a2.7 2.7 0 102.7 2.7V2h2.7A4 4 0 0019 5.5z"></path></svg></a>
           <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7.5a3 3 0 00-2-2C18 5 12 5 12 5s-6 0-8 .5a3 3 0 00-2 2C2 9.5 2 12 2 12s0 2.5.4 4.5a3 3 0 002 2c2 .5 8 .5 8 .5s6 0 8-.5a3 3 0 002-2c.4-2 .4-4.5.4-4.5s0-2.5-.4-4.5zM10 16V8l5 4z"></path></svg></a>
         </div>
       </div>
@@ -1377,7 +1385,7 @@
         <h5>Contacto</h5>
         <ul>
           <li><a href="mailto:hola@barbaramagallanes.com">hola@barbaramagallanes.com</a></li>
-          <li><a href="#">+54 9 11 0000-0000 (WhatsApp)</a></li>
+          <li><a href="https://wa.me/5491136573720" target="_blank" rel="noopener noreferrer">+54 9 11 3657-3720 (WhatsApp)</a></li>
           <li>Buenos Aires · Argentina</li>
           <li>Cursos online + presenciales</li>
         </ul>
@@ -1390,6 +1398,16 @@
     </div>
   </div>
 </footer>
+
+
+<section class="end-social">
+  <div class="container wrap">
+    <span class="label">Seguinos en redes</span>
+    <a class="chip" href="https://www.tiktok.com/@salvando.vidas414" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a class="chip" href="https://wa.me/5491136573720" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a class="chip" href="https://www.instagram.com/salvandorcp" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </div>
+</section>
 
 <a href="#certificaciones" class="sticky-cta">
   <span class="dot"></span>
