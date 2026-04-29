@@ -501,6 +501,39 @@
   @keyframes cta-pop{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
   @media(max-width:560px){.sticky-cta{bottom:14px;right:14px;padding:12px 18px;font-size:12px}}
 
+  /* ============ MOBILE TUNING ============ */
+  @media(max-width:560px){
+    .container{padding:0 18px}
+    nav.top .row{padding:12px 0;gap:10px}
+    .logo .name{font-size:13px}
+    .logo .name small{font-size:10px;letter-spacing:.03em}
+    nav.top .cta{padding:10px 14px;font-size:12px;gap:6px}
+
+    .hero{padding:62px 0 84px}
+    .hero .lead{font-size:17px;margin-top:24px}
+    .hero-meta{grid-template-columns:1fr;gap:12px;margin-top:30px}
+    .vital-card{padding:22px}
+    .floating-card{align-self:flex-start;transform:none;max-width:100%;font-size:20px}
+
+    .shock,.agit,.transform,.menu,.how,.bonus,.combo,.audience,.instr,.testi,.guar,.faq,.final{padding:90px 0}
+    .shock-grid{grid-template-columns:1fr}
+    .stat .num{font-size:58px}
+
+    .combo-card{padding:24px}
+    .combo-card .pricerow{flex-direction:column;align-items:flex-start;gap:8px}
+
+    .faq-item summary{padding:18px 20px;font-size:16px}
+    .faq-item p{padding:0 20px 20px;font-size:15px}
+
+    .final h2{line-height:.92}
+    .final p{font-size:18px}
+
+    .foot-grid{grid-template-columns:1fr;gap:30px}
+    .foot-bot{flex-direction:column;gap:8px;align-items:flex-start}
+
+    .sticky-cta{left:14px;right:14px;justify-content:center}
+  }
+
 
   /* ============ END SOCIALS ============ */
   .end-social{background:var(--bg);padding:28px 0 46px}
